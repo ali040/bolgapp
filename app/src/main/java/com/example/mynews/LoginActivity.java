@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         forgotbtn = (TextView)findViewById(R.id.forgotbtn);
 
 
+
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

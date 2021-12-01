@@ -8,6 +8,24 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_group_1"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profilepic"
+            />
+
+
+    </LinearLayout>
+
+
     <TextView
         android:id="@+id/notverifymsg"
         android:layout_width="wrap_content"
