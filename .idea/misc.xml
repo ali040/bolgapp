@@ -7,9 +7,12 @@
         <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.11388888888888889" />
         <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/drawable/ic_group_1.xml" value="0.19074074074074074" />
         <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/drawable/ic_polygon_1.xml" value="0.23125" />
-        <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/layout/activity_home.xml" value="0.4" />
         <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/layout/activity_login.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/layout/activity_newsdec.xml" value="0.1" />
+        <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/layout/activity_splash_screen.xml" value="0.259375" />
+        <entry key="..\:/Users/alidu/StudioProjects/Mynews/app/src/main/res/layout/singlerow.xml" value="0.20430107526881722" />
       </map>
     </option>
   </component>

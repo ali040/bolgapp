@@ -53,19 +53,14 @@ public class MainActivity extends AppCompatActivity {
         mPhone = (EditText) findViewById(R.id.ED3);
         mRegisterbtn = (Button) findViewById(R.id.btn1);
         haveaccountbtn =(TextView)findViewById(R.id.haveaccountbtn);
-
         fAuth = FirebaseAuth.getInstance();
-        //fstore= FirebaseFirestore.getInstance();
         fstore = FirebaseFirestore.getInstance();
-
         mProgressBar = findViewById(R.id.progressbarr);
-
         if(fAuth.getCurrentUser() != null){
             startActivity(new Intent(getApplicationContext(),HomeActivity.class));
             finish();
 
         }
-
         mRegisterbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,10 +105,6 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
                             });
-
-
-
-
                             Toast.makeText(MainActivity.this, "User Created", Toast.LENGTH_SHORT).show();
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fstore.collection("users").document(userID);
@@ -121,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
                             user.put("fname",fullname);
                             user.put("email",email);
                             user.put("phone",phone);
-
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
@@ -137,17 +127,6 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
                             });
-//                            userID = fAuth.getCurrentUser().getUid();
-//                            DocumentReference documentReference= fstore.collection("users").document(userID);
-//                            Map<String,Object> user = new HashMap<>();
-//                            user.put("fName",fullName);
-//
-//                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-//                                @Override
-//                                public void onSuccess(Void unused) {
-//                                    Log.d(TAG,"onSuccess: user profile is created for"+userID);
-//                                }
-//                            });
                             startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                         }else{
                             Toast.makeText(MainActivity.this, "Error !"+ task.getException(), Toast.LENGTH_SHORT).show();
