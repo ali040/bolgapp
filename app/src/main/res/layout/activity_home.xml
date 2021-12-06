@@ -6,72 +6,91 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
     android:orientation="vertical"
-    android:gravity="center">
-
-    <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@drawable/ic_group_1"
-        android:layout_margin="50dp"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/profilepic"
-            />
-
-
-    </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/notverifymsg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="Email is not Verify"
-        android:textColor="#FF0000"
-        android:visibility="invisible" />
-
-    <TextView
-        android:id="@+id/verifybtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="Click to verify email"
-        android:visibility="invisible" />
-    <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:gravity="center"
-        android:orientation="vertical">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:id="@+id/email"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="phone"
-            android:id="@+id/phone"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fullname"
-            android:id="@+id/fullName"/>
-
-        </LinearLayout>
-    <Button
+    >
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:text="logout"
-        android:onClick="logout"/>
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </com.google.android.gms.ads.AdView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recview"/>
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@drawable/ic_group_1"-->
+<!--        android:layout_margin="50dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:id="@+id/profilepic"-->
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/notverifymsg"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:text="Email is not Verify"-->
+<!--        android:textColor="#FF0000"-->
+<!--        android:visibility="invisible" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/verifybtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:text="Click to verify email"-->
+<!--        android:visibility="invisible" />-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Email"-->
+<!--            android:id="@+id/email"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="phone"-->
+<!--            android:id="@+id/phone"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="fullname"-->
+<!--            android:id="@+id/fullName"/>-->
+
+<!--        </LinearLayout>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:text="logout"-->
+<!--        android:onClick="logout"/>-->
+   </androidx.appcompat.widget.LinearLayoutCompat>
